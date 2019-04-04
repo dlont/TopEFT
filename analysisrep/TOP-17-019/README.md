@@ -27,7 +27,7 @@ The notation used in the TOP-17-019 paper is different from the original FeynRul
 The obtained predictions are parametrized by a polynomial of second degree in 4 variables, see Eq.(3). Linear and quadratic parametrization coefficients can be found in Tab.4.
 
 ## MadGraph5_aMCatNLO card that was used for the parametrization of EFT predictions
-
+see `mg_cards/run_02_tag_1_banner.txt`
 
 ## Assumptions
 
