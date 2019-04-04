@@ -17,8 +17,6 @@ import logging
 import json
 import textwrap
 import pprint as pp
-from prettytable import  PrettyTable
-from prettytable import MSWORD_FRIENDLY
 import ROOT as rt
 import numpy as np
 from mpl_toolkits.mplot3d import axes3d
@@ -70,16 +68,6 @@ class log_with(object):
             self.logger.debug(self.EXIT_MESSAGE.format(func.__name__))   # logging level .info(). Set to .debug() if you want to
             return f_result
         return wrapper
-
-def progress(current, total, status=''):
-        fullBarLength = 80
-        doneBarLength = int(round(fullBarLength * current / float(total)))
-
-        percents = round(100.0 * current / float(total), 1)
-        bar = '>' * doneBarLength + ' ' * (fullBarLength - doneBarLength)
-
-        sys.stdout.write('[%s] %s%s ...%s\r' % (bar, percents, '%', status))
-        sys.stdout.flush()
 
 class Limit():
         def __init__(self,**kwargs):

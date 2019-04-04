@@ -1,6 +1,11 @@
 # EFT constraints
 
-## Requirements
+## Required python packages. Perhaps the list can be reduced.
+### Standard packages
+os, sys, imp, time, glob, shutil, argparse
+subprocess, logging, json, functools
+### Non-standard
+ROOT, numpy, matplotlib, pprint, textwrap
 
 
 `SL_OS_SS_combined_unblind_v3.0.json` contains the upper limit on tttt cross section.
